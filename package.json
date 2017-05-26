@@ -11,5 +11,10 @@
     "url": "github"
   },
   "author": "paul",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
 }
