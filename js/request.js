@@ -1,7 +1,8 @@
+
 exports.getRepos = function(){
-  $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
-    console.log(response);
+  $.get('https://api.github.com/users/' +name + '/repos?access_token=' + apiKey).then(function(repos){
+    displayFunction(repos);
   }).fail(function(error){
-    console.log(error.responseJSON.message);
+    $('.showUser').text("Username" + name + "repos" + error.responseJSON.message + "." + "Enter a valid github Username");
   });
 };
