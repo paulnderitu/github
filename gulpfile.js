@@ -31,7 +31,7 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('concat', function() {
-  return gulp.src('js/interface/*.js')
+  return gulp.src('js/*-interface.js')
     .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });
