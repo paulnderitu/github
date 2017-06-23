@@ -5,6 +5,5 @@ var apiKey = require('./../.env').apiKey;
   }).fail(function(error){
     $('.showUser').text("Username" + name + "repos" + error.responseJSON.message + "." + "Enter a valid github Username");
   });
-};
 
 exports.userModule = User;
